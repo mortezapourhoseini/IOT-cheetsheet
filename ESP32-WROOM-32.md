@@ -99,10 +99,3 @@ void setup() { ledcSetup(channel, freq, resolution); ledcAttachPin(13, channel);
 void loop() { for(int duty=0; duty<=255; duty++){ ledcWrite(channel, duty); delay(10); }}  
 ```  
 
----
-
-### **Resources**  
-- [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf)  
-- [Arduino-ESP32 GitHub](https://github.com/espressif/arduino-esp32)  
-
-Keep this sheet handy for wiring and debugging! 🔧🚀
